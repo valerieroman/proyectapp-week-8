@@ -1,0 +1,100 @@
+h1 {
+    color: #ac0d0d;
+    text-align: center;
+    font-size: 46px;
+    font-family: "Abril Fatface", cursive;
+  }
+  p {
+    text-align: center;
+    font-size: 26px;
+    font-family: "Zilla Slab", serif;
+  }
+  .card {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+  .details {
+    font-size: 20px;
+    color: #f48b29;
+  }
+  .days-forecast {
+    text-align: center;
+  }
+  .days {
+    text-align: center;
+  }
+  .city-info {
+    font-size: 30px;
+    font-weight: 600;
+    color: #d49d42;
+    font-family: "Zilla Slab", senrif;
+  }
+  #overall-weather {
+    font-size: 30px;
+    font-weight: 600;
+    color: #d49d42;
+    font-family: "Zilla Slab", senrif;
+    text-align: center;
+  }
+  .currentTemp {
+    font-weight: 900;
+    font-family: "Zilla Slab", serif;
+    color: #ac0d0d;
+    font-size: 50px;
+    text-align: center;
+  }
+  .forecast {
+    color: black;
+  }
+  .weekdays {
+    text-decoration: underline;
+    font-size: 30px;
+  
+    font-weight: 500;
+    font-family: "Abril Fatface", cursive;
+  }
+  .emoji {
+    font-size: 36px;
+  }
+  
+  .high-low {
+    font-weight: 500;
+    font-size: 36px;
+    color: #ac0d0d;
+    font-family: "Zilla Slab", serif;
+  }
+  .btn-success {
+    background: #8fd9a8;
+    border: #8fd9a8;
+  }
+  .btn-success:hover {
+    background: #d2e69c;
+    transition: 200ms all ease-in-out;
+  }
+  
+  .btn-primary {
+    background: #4b778d;
+    border: #4b778d;
+  }
+  .btn-primary:hover {
+    transition: 200ms all ease-in-out;
+  }
+  .fahrenheit:hover {
+    color: #f48b29;
+    transition: 200ms all ease-in-out;
+    text-decoration: underline;
+  }
+  .celsius:hover {
+    color: #f48b29;
+    transition: 200ms all ease-in-out;
+    text-decoration: underline;
+  }
+  
+  ul {
+    list-style: none;
+    font-size: 20px;
+    font-size: 16px;
+    color: #f48b29;
+  }
+  
