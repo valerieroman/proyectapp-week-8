@@ -88,7 +88,7 @@ h1 {
   }
   .fahrenheit {
     position: relative;
-    font-size: 16px;
+    font-size: 25px;
     top: -32px;
   }
   .fahrenheit:hover {
@@ -98,13 +98,18 @@ h1 {
   }
   .celsius {
     position: relative;
-    font-size: 16px;
+    font-size: 25px;
     top: -32px;
   }
   .celsius:hover {
     color: #f48b29;
     transition: 200ms all ease-in-out;
     text-decoration: underline;
+  }
+  .slash-unit {
+    position: relative;
+    font-size: 25px;
+    top: -32px;
   }
   .currentTemp strong {
     font-weight: 900;
