@@ -47,7 +47,7 @@ h1 {
   .currentTemp {
     font-family: "Zilla Slab", serif;
     color: #ac0d0d;
-    font-size: 50px;
+    font-size: 16px;
     text-align: center;
   }
   .forecast {
@@ -86,10 +86,20 @@ h1 {
   .btn-primary:hover {
     transition: 200ms all ease-in-out;
   }
+  .fahrenheit {
+    position: relative;
+    font-size: 16px;
+    top: -32px;
+  }
   .fahrenheit:hover {
     color: #f48b29;
     transition: 200ms all ease-in-out;
     text-decoration: underline;
+  }
+  .celsius {
+    position: relative;
+    font-size: 16px;
+    top: -32px;
   }
   .celsius:hover {
     color: #f48b29;
@@ -99,7 +109,7 @@ h1 {
   .currentTemp strong {
     font-weight: 900;
     color: rgb(33, 33, 33);
-    font-size: 50px;
+    font-size: 64px;
 
   }
   
