@@ -9,9 +9,12 @@ h1 {
     font-size: 26px;
     font-family: "Zilla Slab", serif;
   }
-  .card {
+  .weather-app-wrapper {
     max-width: 900px;
     margin: 30px auto;
+
+  }
+  .card {
     padding: 20px;
     border:1px solid #dadde1;
     border-radius: 20px;
@@ -98,7 +101,6 @@ h1 {
   ul {
     list-style: none;
     font-size: 20px;
-    font-size: 16px;
-    color: #f48b29;
+    color: rgb(135, 135, 135);
   }
   
