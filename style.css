@@ -45,7 +45,6 @@ h1 {
     text-align: center;
   }
   .currentTemp {
-    font-weight: 900;
     font-family: "Zilla Slab", serif;
     color: #ac0d0d;
     font-size: 50px;
@@ -96,6 +95,12 @@ h1 {
     color: #f48b29;
     transition: 200ms all ease-in-out;
     text-decoration: underline;
+  }
+  .currentTemp strong {
+    font-weight: 900;
+    color: rgb(33, 33, 33);
+    font-size: 50px;
+
   }
   
   ul {
