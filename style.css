@@ -18,7 +18,9 @@ h1 {
   }
   .details {
     font-size: 20px;
-    color: #f48b29;
+    color: rgb(135, 135, 135);
+    margin: 0 auto;
+    padding: 0;
   }
   .days-forecast {
     text-align: center;
