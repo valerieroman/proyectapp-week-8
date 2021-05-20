@@ -1,3 +1,4 @@
+  //Current date and time //
   let days = [
     "Sunday",
     "Monday",
@@ -39,7 +40,15 @@
   
     return `${weekday}, ${year} ${month} ${date}, ${hour}:${minutes}`;
   }
+
+  let theDate = document.querySelector("#date");
+  let now = new Date();
+  theDate.innerHTML = dateTime(now);
   
+// Current date and time ^^ //
+
+
+//Current Temperature, Humidity, Wind, pressure, feels like, overall weather //
   function retrieveWeather(response) {
     document.querySelector("h1").innerHTML = response.data.name;
     document.querySelector("#temperature").innerHTML = Math.round   
@@ -80,9 +89,6 @@
     navigator.geolocation.getCurrentPosition(searchLocation);
   }
   
-  let theDate = document.querySelector("#date");
-  let now = new Date();
-  theDate.innerHTML = dateTime(now);
   
   let searchForm = document.querySelector("#search-form");
   searchForm.addEventListener("submit", handleSubmit);
