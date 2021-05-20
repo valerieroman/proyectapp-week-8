@@ -1,26 +1,3 @@
-let weather = {
-    paris: {
-      temp: 19.7,
-      humidity: 80
-    },
-    tokyo: {
-      temp: 17.3,
-      humidity: 50
-    },
-    lisbon: {
-      temp: 30.2,
-      humidity: 20
-    },
-    "san francisco": {
-      temp: 20.9,
-      humidity: 100
-    },
-    moscow: {
-      temp: -5,
-      humidity: 20
-    }
-  };
-  
   let days = [
     "Sunday",
     "Monday",
@@ -65,9 +42,8 @@ let weather = {
   
   function retrieveWeather(response) {
     document.querySelector("h1").innerHTML = response.data.name;
-    document.querySelector("#temperature").innerHTML = Math.round(
-      response.data.main.temp
-    );
+    document.querySelector("#temperature").innerHTML = Math.round   
+      (response.data.main.temp);
   
     document.querySelector("#humidity").innerHTML = response.data.main.humidity;
     document.querySelector("#wind").innerHTML = Math.round(
@@ -80,12 +56,13 @@ let weather = {
     document.querySelector("#overall-weather").innerHTML =
       response.data.weather[0].main;
   }
+
   function searchCity(city) {
     let apiKey = "b15c68d0eb463f5b86f355f615a747ce";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(retrieveWeather);
   }
-  
+  console.log(city);
   function handleSubmit(event) {
     event.preventDefault();
     let city = document.querySelector("#search-city-input").value;
