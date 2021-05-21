@@ -96,7 +96,7 @@
   let currentLocationButton = document.querySelector("#current-location-button");
   currentLocationButton.addEventListener("click", getCurrentLocation);
   
-  searchCity("Paris");
+
   // Fahrenheit to Celsius functions //
 
   let fahrenheitLink = document.querySelector("#fahrenheit-link");
