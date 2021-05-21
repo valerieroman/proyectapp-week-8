@@ -117,5 +117,3 @@
     let temperatureValue = document.querySelector("#temperature");
     temperatureValue.innerHTML = celTemp;
   }
-
-  let celTemp = null;
