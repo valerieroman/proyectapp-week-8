@@ -86,31 +86,27 @@ h1 {
   .btn-primary:hover {
     transition: 200ms all ease-in-out;
   }
-  .fahrenheit {
+  .fahrenheit-link {
     position: relative;
     font-size: 25px;
     top: -32px;
   }
-  .fahrenheit:hover {
+  .fahrenheit-link:hover {
     color: #f48b29;
     transition: 200ms all ease-in-out;
     text-decoration: underline;
   }
-  .celsius {
+  .celsius-link {
     position: relative;
     font-size: 25px;
     top: -32px;
   }
-  .celsius:hover {
+  .celsius-link:hover {
     color: #f48b29;
     transition: 200ms all ease-in-out;
     text-decoration: underline;
   }
-  .slash-unit {
-    position: relative;
-    font-size: 25px;
-    top: -32px;
-  }
+
   .currentTemp strong {
     font-weight: 900;
     color: rgb(33, 33, 33);

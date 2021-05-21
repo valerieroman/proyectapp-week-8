@@ -97,4 +97,25 @@
   currentLocationButton.addEventListener("click", getCurrentLocation);
   
   searchCity("Paris");
+  // Fahrenheit to Celsius functions //
+
+  let fahrenheitLink = document.querySelector("#fahrenheit-link");
+  fahrenheitLink.addEventListener("click", convertToFahrenheit);
+
+  let celsiusLink = document.querySelector("#celsius-link");
+  celsiusLink.addEventListener("click", convertToCelsius);
+
+  function convertToFahrenheit(event) {
+    event.preventDefault();
+    let fahTemp = (celTemp * 9) / 5 + 32;
+    let temperatureValue = document.querySelector("#temperature");
+    temperatureValue.innerHTML = Math.round(fahTemp);
+  }
   
+  function convertToCelsius(event) {
+    event.preventDefault();
+    let temperatureValue = document.querySelector("#temperature");
+    temperatureValue.innerHTML = celTemp;
+  }
+
+  let celTemp = null;
