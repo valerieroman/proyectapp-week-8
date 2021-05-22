@@ -65,7 +65,7 @@
     document.querySelector("#overall-weather").innerHTML =
       response.data.weather[0].main;
   
-    iconElement.setAttribute("src", `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2px.png`);
+    iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2px.png`);
     iconElement.setAttribute("alt", response.data.weather[0].description);
   }
 
