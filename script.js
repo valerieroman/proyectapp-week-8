@@ -64,11 +64,15 @@
     );
     document.querySelector("#overall-weather").innerHTML =
       response.data.weather[0].main;
+  
+    iconElement.setAttribute("src", `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2px.png`);
+    iconElement.setAttribute("alt", response.data.weather[0].description);
   }
 
   function searchCity(city) {
     let apiKey = "b15c68d0eb463f5b86f355f615a747ce";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    let city = "Philadelphia";
     axios.get(apiUrl).then(retrieveWeather);
   }
 
@@ -80,7 +84,6 @@
   function searchLocation(position) {
     let apiKey = "b15c68d0eb463f5b86f355f615a747ce";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
-  
     axios.get(apiUrl).then(retrieveWeather);
   }
   
