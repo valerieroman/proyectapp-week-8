@@ -44,6 +44,16 @@ h1 {
     font-family: "Zilla Slab", senrif;
     text-align: center;
   }
+
+  .weather-temperature .active {
+    color: rgb(33, 33, 33);
+    cursor: default;
+  }
+
+  .weather-temperature .active:hover {
+    text-decoration: none;
+  }
+
   .currentTemp {
     font-family: "Zilla Slab", serif;
     color: #ac0d0d;
