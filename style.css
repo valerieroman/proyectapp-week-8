@@ -63,6 +63,7 @@ h1 {
   }
   .forecast {
     color: black;
+    margin: 0 auto;
   }
   .weekdays {
     text-decoration: underline;
