@@ -65,6 +65,7 @@
     document.querySelector("#overall-weather").innerHTML =
       response.data.weather[0].main;
   
+    let iconElement = document.querySelector("#icon");
     iconElement.setAttribute("src", 
       `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 
@@ -75,7 +76,6 @@
   function searchCity(city) {
     let apiKey = "b15c68d0eb463f5b86f355f615a747ce";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-    let city = "Philadelphia";
     axios.get(apiUrl).then(retrieveWeather);
   }
 
@@ -123,3 +123,5 @@
     let temperatureValue = document.querySelector("#temperature");
     temperatureValue.innerHTML = celTemp;
   }
+
+  searchCity("Philadelphia");
