@@ -49,7 +49,9 @@
 
 
 //Current Temperature, Humidity, Wind, pressure, feels like, overall weather //
-  function retrieveWeather(response) {
+function retrieveWeather(response) {
+    celsiusTemperature = response.data.main.temp;
+    
     document.querySelector("h1").innerHTML = response.data.name;
     document.querySelector("#temperature").innerHTML = Math.round   
       (celsiusTemperature);
@@ -72,7 +74,6 @@
     iconElement.setAttribute("alt", 
       response.data.weather[0].description);
     
-    celsiusTemperature = response.data.main.temp;
   }
 
   function searchCity(city) {
