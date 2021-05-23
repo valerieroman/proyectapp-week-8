@@ -48,10 +48,11 @@ h1 {
   .weather-temperature .active {
     color: rgb(33, 33, 33);
     cursor: default;
+    text-decoration: none;
   }
 
   .weather-temperature .active:hover {
-    text-decoration: none;
+    text-decoration: underline; 
   }
 
   .currentTemp {
