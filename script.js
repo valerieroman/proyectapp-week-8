@@ -48,9 +48,10 @@
 // Current date and time ^^ //
 
 
-//Current Temperature, Humidity, Wind, pressure, feels like, overall weather //
+//Current display Temperature, Humidity, Wind, pressure, feels like, overall weather //
 function retrieveWeather(response) {
     celsiusTemperature = response.data.main.temp;
+    
 
     document.querySelector("h1").innerHTML = response.data.name;
     document.querySelector("#temperature").innerHTML = Math.round   
@@ -122,6 +123,39 @@ function retrieveWeather(response) {
     temperatureValue.innerHTML = Math.round(celsiusTemperature);
   }
   
+  //Forecast functions //
+function displayForecast() {
+  let forecastElement = document.querySelector("#weather-forecast-temp");
+
+  let days = ["Thur", "Fri", "Sat", "Sun", "Mon"];
+  
+  let forecastHTML = `<div class= "row">`;
+  days.forEach(function(day) {
+  forecastHTML = 
+    forecastHTML + 
+    `<div class="col-sm days">
+    <div class="weekdays">${day}</div>
+    <img src="http://openweathermap.org/img/wn/50d@2x.png"
+    alt=""
+    width="42"
+    />
+    <div class="high-low">
+      <span class="forecast-max">66°</span>
+      <span class="forecast-min">
+    /48°</span>
+  </div>
+  </div>
+  
+  `;
+});
+
+  forecastHTML= forecastHTML +`</div>`;
+  forecastElement.innerHTML = forecastHTML;
+
+}
+
+  //
+  
   let celsiusTemperature = null;
   
   
@@ -136,3 +170,4 @@ function retrieveWeather(response) {
     celsiusLink.addEventListener("click", convertToCelsius);
 
   searchCity("Philadelphia");
+  displayForecast();
