@@ -44,6 +44,9 @@ h1 {
     font-family: "Zilla Slab", senrif;
     text-align: center;
   }
+  #icon {
+    font-size: 30px;
+  }
 
   .weather-temperature .active {
     color: rgb(33, 33, 33);
