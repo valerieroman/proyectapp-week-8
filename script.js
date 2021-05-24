@@ -38,7 +38,7 @@
     let month = months[now.getMonth()];
     let weekday = days[now.getDay()];
   
-    return `${weekday}, ${year} ${month} ${date}, ${hour}:${minutes}`;
+    return `${weekday}, ${month} ${date}, ${year}. Time:${hour}:${minutes}`;
   }
 
   let theDate = document.querySelector("#date");
@@ -51,7 +51,7 @@
 //Current Temperature, Humidity, Wind, pressure, feels like, overall weather //
 function retrieveWeather(response) {
     celsiusTemperature = response.data.main.temp;
-    
+
     document.querySelector("h1").innerHTML = response.data.name;
     document.querySelector("#temperature").innerHTML = Math.round   
       (celsiusTemperature);
