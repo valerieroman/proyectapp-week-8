@@ -32,6 +32,9 @@ h1 {
   }
   .days-forecast {
     text-align: center;
+    margin-top: 20px;
+    text-align: center;
+
   }
   .days {
     text-align: center;
@@ -76,9 +79,9 @@ h1 {
   .weekdays {
     text-decoration: underline;
     font-size: 30px;
-  
     font-weight: 500;
     font-family: "Abril Fatface", cursive;
+    opacity: 0.5;;
   }
   .emoji {
     font-size: 36px;
@@ -86,10 +89,15 @@ h1 {
   
   .high-low {
     font-weight: 500;
-    font-size: 36px;
-    color: #ac0d0d;
+    font-size: 25px;
+    color: #000000;
     font-family: "Zilla Slab", serif;
   }
+  .forecast-min {
+    font-size: 25px;
+    opacity: 0.5;
+  }
+
   .btn-success {
     background: #8fd9a8;
     border: #8fd9a8;
