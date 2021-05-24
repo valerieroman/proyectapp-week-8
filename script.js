@@ -128,12 +128,12 @@ function displayForecast() {
   let forecastElement = document.querySelector("#weather-forecast-temp");
 
   let days = ["Thur", "Fri", "Sat", "Sun", "Mon"];
-  
+
   let forecastHTML = `<div class= "row">`;
   days.forEach(function(day) {
   forecastHTML = 
     forecastHTML + 
-    `<div class="col-sm days">
+    `<div class="col-2 days">
     <div class="weekdays">${day}</div>
     <img src="http://openweathermap.org/img/wn/50d@2x.png"
     alt=""
