@@ -52,7 +52,7 @@ h1 {
   }
 
   .weather-temperature .active:hover {
-    text-decoration: underline; 
+    text-decoration: none; 
   }
 
   .currentTemp {
