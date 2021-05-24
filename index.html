@@ -51,30 +51,28 @@
 
 
        <div class="col-8">
-         <p class="city-info" id="date" >
-           Current Date and Time </br>
+         <p class="city-info" >
+           Last updated at: <span id="date"></span> </br>
            <ul>
              <li id="overall-weather">
            Cloudy ☁ </li>
-            
+            <li>
+              <div class="weather-temperature">
+                <img src=" " alt="Clear" id="icon" class="float-left"/>
+                <br>
+                <div class="currentTemp">
+              <strong> <span id="temperature"> 59</span>°
+               <span class="units">
+                 <a href="#" id="celsius-link" class="active"> °C</a> | <a href="#" id="fahrenheit-link">°F</a> 
+               </span>
+             </strong>
+               </div>
+                </div>
+               </div>
+            </li>
             </ul>
          </p>
-         <br>
-         <p>
-           <div class="weather-temperature">
-             <img src=" " alt="Clear" id="icon" class="float-left"/>
-             <div class="float-none">
-             <div class="currentTemp">
-           <strong> <span id="temperature"> 59</span>°
-            <span class="units">
-              <a href="#" id="celsius-link" class="active"> °C</a> | <a href="#" id="fahrenheit-link">°F</a> 
-            </span>
-          </strong>
-            </div>
-             </div>
-            </div>
-          </p>
-        <br />
+        <br/>
         <p class="forecast">
           Forecast for the next 5 days:
         </p>
