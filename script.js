@@ -133,9 +133,10 @@ function retrieveWeather(response) {
   
   //Forecast functions //
 function displayForecast(response) {
+  let forecast = response.data.daily;
   let forecastElement = document.querySelector("#weather-forecast-temp");
 
-  let days = ["Thur", "Fri", "Sat", "Sun", "Mon"];
+  let days = ["Sunday","Monday", "Tuesday","Wednesday", "Thursday", "Friday", "Saturday"];
 
   let forecastHTML = `<div class= "row">`;
   days.forEach(function(day) {
