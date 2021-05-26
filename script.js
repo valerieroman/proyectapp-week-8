@@ -51,7 +51,7 @@
 //Current display Temperature, Forecast API, Humidity, Wind, pressure, feels like, overall weather //
 function getForecast(coordinates) {
   let apiKey = "b15c68d0eb463f5b86f355f615a747ce";
-  let apiURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid={API key}&units=metric`;
+  let apiURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apikey}&units=metric`;
   axios.get(apiURL).then(displayForecast);
 }
 
