@@ -48,7 +48,13 @@
 // Current date and time ^^ //
 
 
-//Current display Temperature, Humidity, Wind, pressure, feels like, overall weather //
+//Current display Temperature, Forecast API, Humidity, Wind, pressure, feels like, overall weather //
+function getForecast(coordinates) {
+  let apiKey = "b15c68d0eb463f5b86f355f615a747ce";
+  let apiURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid={API key}&units=metric`;
+  axios.get(apiURL).then(displayForecast);
+}
+
 function retrieveWeather(response) {
     celsiusTemperature = response.data.main.temp;
     
@@ -74,6 +80,8 @@ function retrieveWeather(response) {
 
     iconElement.setAttribute("alt", 
       response.data.weather[0].description);
+
+    getForecast(response.data.coord);
     
   }
 
@@ -124,7 +132,7 @@ function retrieveWeather(response) {
   }
   
   //Forecast functions //
-function displayForecast() {
+function displayForecast(response) {
   let forecastElement = document.querySelector("#weather-forecast-temp");
 
   let days = ["Thur", "Fri", "Sat", "Sun", "Mon"];
@@ -170,4 +178,3 @@ function displayForecast() {
     celsiusLink.addEventListener("click", convertToCelsius);
 
   searchCity("Philadelphia");
-  displayForecast();
