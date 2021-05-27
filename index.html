@@ -46,18 +46,18 @@
         <li>
           Feels like:
          <span id = "feelsLike"> </span>°C
+         </li>
         </ul>
         </div>
-
-
        <div class="col-8">
          <p class="city-info" >
            Last updated at: <span id="date"></span> </br>
+           </p>
            <ul>
              <li id="overall-weather">
            Cloudy ☁ </li>
             <li>
-              <div class="weather-temperature">
+              <div class="d-flex weather-temperature">
                 <img src=" " alt="Clear" id="icon" class="float-right"/>
                 <div class="float-right">
                 <div class="currentTemp">
@@ -69,19 +69,15 @@
                </div>
                </div>
                 </div>
-               </div>
-            </li>
-            </ul>
-         </p>
-  
-
+                </li>
+                </ul>
+                </div>
+                </div>
          <div class="days-forecast" id="weather-forecast-temp">
-
-
         <br/>
+        <form class = "search-city"id = "search-form">
         <div class="row">
           <div class="col-6">
-            <form class = "search-city"id = "search-form">
           <input type="search"
           class="form-control"
           placeholder="Search for a different city🔍"
@@ -89,13 +85,15 @@
           autocomplete="off"
           id="search-city-input"/>
             </div>
-          <div class="col-3">
+          <div class="col-6">
           <input type="submit" class="btn btn-success" value="Search"/>
           <input type= "submit" class="btn btn-primary" value="Current Location" id="current-location-button"/>
-          <br>
-          <script src="script.js"></script>
+          <br/>
         </div>
       </div>
+      </form>
+         </div>
+         </div>
       <small>
         <a href="https://github.com/valerieroman/proyectapp-week-6/tree/Tutorial"
         target="_blank"
@@ -103,5 +101,6 @@
         by Valerie Roman De Jesus
       </small>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
