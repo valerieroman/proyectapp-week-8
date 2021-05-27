@@ -38,7 +38,7 @@
     let month = months[now.getMonth()];
     let weekday = days[now.getDay()];
   
-    return `${weekday}, ${month} ${date}, ${year}. Time:${hour}:${minutes}`;
+    return `${weekday}, ${month} ${date}, ${year}. Time: ${hour}:${minutes}`;
   }
 
   let theDate = document.querySelector("#date");

@@ -1,11 +1,13 @@
 body {
   background-image: url("../images/gradientsunset.jpeg");
+  background-position: center;
 }
 h1 {
-    color: #ac0d0d;
+    color: #EE603A;
     text-align: center;
     font-size: 46px;
     font-family: "Abril Fatface", cursive;
+    font-family: "Zilla Slab", serif;
   }
   p {
     text-align: center;
@@ -65,13 +67,6 @@ h1 {
 
   .weather-temperature .active:hover {
     text-decoration: none; 
-  }
-
-  .currentTemp {
-    font-family: "Zilla Slab", serif;
-    color: #ac0d0d;
-    font-size: 16px;
-    text-align: center;
   }
 
   .weekdays {
@@ -143,6 +138,6 @@ h1 {
   ul {
     list-style: none;
     font-size: 20px;
-    color: rgb(135, 135, 135);
+    color: #000000;
   }
   
