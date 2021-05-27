@@ -132,8 +132,8 @@ function retrieveWeather(response) {
   }
   
   //Forecast functions //
-  function formatDay(date) {
-    let date = new Date(timestamp * 1000);
+  function formatDay(timestamp) {
+    let date = new Date (timestamp * 1000);
     let day = date.getDay();
     let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   
@@ -146,7 +146,7 @@ function displayForecast(response) {
   let forecastElement = document.querySelector("#weather-forecast-temp");
 
   let forecastHTML = `<div class= "row">`;
-  forecast.forEach(function(forecastDay, index) {
+  forecast.forEach(function (forecastDay, index) {
     if (index < 6) {
   forecastHTML = 
     forecastHTML + 
@@ -158,10 +158,10 @@ function displayForecast(response) {
     />
     <div class="high-low">
       <span class="forecast-max">${
-        Math.round(forecastDay.temp.max)}°</span>
+        Math.round(forecastDay.temp.max)}° </span>
       <span class="forecast-min">
-    /${
-      Math.round(forecastDay.temp.min)}°</span>
+    ${
+      Math.round(forecastDay.temp.min)}° </span>
   </div>
   </div>
   
