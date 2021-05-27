@@ -136,7 +136,7 @@ function displayForecast(response) {
   let forecast = response.data.daily;
   let forecastElement = document.querySelector("#weather-forecast-temp");
 
-  let days = ["Sunday","Monday", "Tuesday","Wednesday", "Thursday"];
+  let days = ["Sun","Mon", "Tue","Wed", "Thu"];
 
   let forecastHTML = `<div class= "row">`;
   days.forEach(function(day) {
