@@ -158,10 +158,9 @@ function displayForecast(response) {
     />
     <div class="high-low">
       <span class="forecast-max">${
-        Math.round(forecastDay.temp.max)}° </span>
-      <span class="forecast-min">
-    ${
-      Math.round(forecastDay.temp.min)}° </span>
+        Math.round(forecastDay.temp.max)}°C </span>
+      <span class="forecast-min">${
+      Math.round(forecastDay.temp.min)}°C </span>
   </div>
   </div>
   
